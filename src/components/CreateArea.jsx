@@ -31,7 +31,7 @@ function CreateArea(props) {
           onChange={noteHandle}
           value={noteNote}
         />
-        <button onClick={() => props.clicked(noteFinal, setNote, setTitle)}>
+        <button onClick={(e) => props.clicked(e, noteFinal, setNote, setTitle)}>
           +
         </button>
       </form>

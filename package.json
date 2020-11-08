@@ -1,7 +1,7 @@
 {
   "name": "c-19",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Covid-19 Dashboard",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -26,5 +26,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneblackfoot/C-19.git"
+  },
+  "author": "Marco Beghi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oneblackfoot/C-19/issues"
+  },
+  "homepage": "https://github.com/oneblackfoot/C-19#readme"
 }

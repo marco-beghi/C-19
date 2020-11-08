@@ -5,16 +5,10 @@ import Note from "./Note";
 import CreateArea from "./CreateArea";
 import covidData from "./Chart";
 
+
 function App() {
   const [notes, setNotes] = useState([]);
   const [chartData, setChartData] = useState({});
-
-  // function updateCovidData(covidData) {
-  //   console.log("Covid Data is :");
-  //   console.log(covidData);
-  //   setChartData(covidData);
-  //   event.preventDefault();
-  // }
 
   const updateCovidData = async (covidData) => {
     const res = await fetch(covidData);
@@ -31,7 +25,7 @@ function App() {
     });
   };
 
-  function handleClick(inputNote, setNote, setTitle) {
+  function handleClick(e, inputNote, setNote, setTitle) {
     setNotes((previousNote) => {
       return [...previousNote, inputNote];
     });
@@ -39,8 +33,7 @@ function App() {
     setTitle("");
 
     updateCovidData(covidData);
-
-    //event.preventDefault();
+    e.preventDefault();
   }
 
   function handleDelete(id) {
