@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Line } from "react-chartjs-2";
 
 function Note(props) {
@@ -9,11 +9,30 @@ function Note(props) {
       <div>
         {console.log("props.covidData is :")}
         {console.log(props.covidData)}
-        <Line data={props.covidData} />
+        <Line data={props.covidData} width={10} height={6}
+        options={
+          {backgroundColor:'rgba(256, 0, 0, 100)'},
+          {scales: {
+              yAxes: [{
+                  ticks: {
+                  		reverse: false,
+                      beginAtZero:false
+                  }
+              }],
+              xAxes: [{
+                  type:"time",
+              		ticks: {
+                  	reverse: false,
+                    beginAtZero: false
+                  }
+              }]
+          }
+        }}
+          />
       </div>
       <button
         className="note"
-        onClick={/*console.log(props)*/ () => props.onDelete(props.id)}
+        onClick={() => props.onDelete(props.id)}
       >
         -
       </button>
