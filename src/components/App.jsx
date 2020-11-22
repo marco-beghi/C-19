@@ -3,7 +3,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
+import SplashScreen from "./SplashScreen"
 import covidData from "./Chart";
+
 
 
 function App() {
@@ -64,6 +66,7 @@ function App() {
           />
         );
       })}
+      <SplashScreen />
       <Footer />
     </div>
   );

@@ -70,6 +70,22 @@ footer p {
   outline: none;
 }
 
+.splashScreen button {
+  position: relative;
+  font-size: 1em;
+  text-align: center;
+  float: right;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #ffffff;
+  background: black;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
 form {
   position: relative;
   width: 480px;
@@ -102,4 +118,22 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+.splashScreen{
+  position: relative;
+  z-index: 99;
+
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    float: center;
+
+    width: 75%;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+
 }
