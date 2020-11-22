@@ -11,7 +11,7 @@ function Note(props) {
         {console.log(props.covidData)}
         <Line data={props.covidData} width={10} height={6}
         options={
-          {backgroundColor:'rgba(256, 120, 0, 120)'},
+          {backgroundColor:'rgba(256, 125, 0, 125)'},
           {scales: {
               yAxes: [{
                   ticks: {
