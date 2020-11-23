@@ -3,23 +3,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
+
 body {
-  background: #eee;
+  background: #1B1829;
   padding: 0 16px;
 }
 
 header {
-  background-color: #000000;
+  background-color: #161422;
   margin: auto -16px;
   padding: 16px 32px;
 }
 
 header h1 {
-  color: rgb(255, 255, 255);
-  font-family: "McLaren", cursive;
+  color: #FAFF7F;
+  font-family: 'PT Serif', serif;
   font-weight: 200;
 }
 
@@ -32,21 +34,23 @@ footer {
 }
 
 footer p {
-  color: #ccc;
+  color: #FDFFBF;
 }
+
 .note {
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
+  background: #161422;
+  box-shadow: 0 8px 20px #0D0C15;
   padding: 10px;
   width: 50%;
   margin: 16px;
   float: left;
 }
+
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
 }
+
 .note p {
   font-size: 1.1em;
   margin-bottom: 10px;
@@ -61,8 +65,8 @@ footer p {
   float: right;
   border-radius: 50%;
   margin-right: 10px;
-  color: #ffffff;
-  background: black;
+  color: #BEBBBB;
+  background: #074B47;
   border: none;
   width: 36px;
   height: 36px;
@@ -77,24 +81,25 @@ footer p {
   float: right;
   border-radius: 50%;
   margin-right: 10px;
-  color: #ffffff;
-  background: black;
+  color: #BEBBBB;
+  background: #074B47;
   border: none;
   width: 36px;
   height: 36px;
   cursor: pointer;
   outline: none;
+
 }
 
 form {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
-  background: #fff;
+  background: #161422;
   padding: 15px;
-  border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  box-shadow: 0 8px 20px #0D0C15;
 }
+
 form input,
 form textarea {
   width: 100%;
@@ -104,12 +109,14 @@ form textarea {
   font-size: 1.2em;
   font-family: inherit;
   resize: none;
+  background: #161422;
 }
+
 form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #000000;
+  background: #074B47;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -120,20 +127,15 @@ form button {
   outline: none;
 }
 
-.splashScreen{
+.splashScreen {
   position: relative;
+  color:
   z-index: 99;
-
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
-    float: center;
-
-    width: 75%;
-    margin: 30px auto 20px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 7px;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
-
+  background: #161422;
+  float: center;
+  width: 75%;
+  margin: 30px auto 20px auto;
+  padding: 30px;
+  box-shadow: 0 32px 80px #0D0C15;
+  color: #fff;
 }

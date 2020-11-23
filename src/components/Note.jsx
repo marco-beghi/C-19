@@ -9,14 +9,16 @@ function Note(props) {
       <div>
         {console.log("props.covidData is :")}
         {console.log(props.covidData)}
-        <Line data={props.covidData} width={10} height={6}
+
+        <Line data={props.covidData}
+        width={10}
+        height={6}
         options={
-          {backgroundColor:'rgba(256, 125, 200, 125)'},
           {scales: {
               yAxes: [{
                   ticks: {
                   		reverse: false,
-                      beginAtZero:false
+                      beginAtZero:true
                   }
               }],
               xAxes: [{
